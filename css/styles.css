@@ -1,0 +1,138 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+.cabecera {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo {
+    height: 50px;
+    margin-right: 10px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.busqueda {
+    margin-top: 10px;
+}
+
+.busqueda input {
+    padding: 5px;
+    width: 200px;
+}
+
+.busqueda button {
+    padding: 5px 10px;
+    background: #555;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+/* Estilos para la página principal */
+.entrada-principal {
+    margin: 20px;
+    text-align: center;
+}
+
+.entrada-principal img {
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+}
+
+.entradas-secundarias {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 20px;
+}
+
+.entradas-secundarias article {
+    width: 30%;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.entradas-secundarias img {
+    width: 100%;
+    height: auto;
+}
+
+/* Estilos para la página de noticia */
+.noticia-completa {
+    margin: 20px;
+}
+
+.noticia-completa img {
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    margin: 10px 0;
+}
+
+.noticias-relacionadas {
+    margin: 20px;
+}
+
+.noticias-relacionadas ul {
+    list-style: none;
+    padding: 0;
+}
+
+.noticias-relacionadas ul li {
+    margin: 10px 0;
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    .entradas-secundarias article {
+        width: 45%;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    .cabecera {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 480px) {
+    .entradas-secundarias article {
+        width: 100%;
+    }
+
+    .busqueda input {
+        width: 150px;
+    }
+}
